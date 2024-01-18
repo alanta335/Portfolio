@@ -1,0 +1,100 @@
+:root {
+  --bg-color: #f6f9fc;
+  --typewriterSpeed: 6s;
+  --typewriterCharacters: 20;
+  --background-colour: #5a5d7a;
+}
+
+.hero-title {
+  color: #747fe0;
+  font-size: clamp(0.3rem, 3vw + 1rem, 4rem);
+  position: relative;
+  width: max-content;
+}
+
+.hero-title::before,
+.hero-title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hero-title::before {
+  background: var(--bg-color);
+  animation: typewriter var(--typewriterSpeed)
+    steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+.hero-title::after {
+  width: 0.1rem;
+  background: #747fe0;
+  animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 1s forwards,
+    blink 750ms steps(var(--typewriterCharacters)) infinite;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+@keyframes afterblink {
+  to {
+    width: 0;
+  }
+}
+
+.type-command {
+  color: var(--bg-color);
+  position: relative;
+  width: max-content;
+}
+.type-command::before,
+.type-command::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.type-command::before {
+  background: var(--background-colour);
+  animation: typewriter 2s steps(var(--typewriterCharacters)) 0s forwards;
+}
+
+.type-command::after {
+  width: 0.3rem;
+  background: var(--bg-color);
+  animation: typewriter 2s steps(var(--typewriterCharacters)) 0s forwards,
+    blink 750ms steps(var(--typewriterCharacters)) infinite;
+}
+
+.blink-command {
+  color: var(--bg-color);
+  position: relative;
+  width: max-content;
+}
+.blink-command::before,
+.blink-command::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.blink-command::after {
+  width: 0.3rem;
+  background: var(--bg-color);
+  animation: blink 750ms steps(var(--typewriterCharacters)) infinite;
+}
