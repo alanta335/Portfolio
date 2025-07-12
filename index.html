@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
     <script defer src="script/script.js"></script>
+    <script defer src="script/terminal-animate.js"></script>
     <title>Portfolio</title>
   </head>
   <body>
@@ -63,12 +64,38 @@
         </p>
       </div>
     </section>
+    <section class="section" id="experience">
+      <div class="window-box">
+        <h2>💼 Experience</h2>
+        <h3>Software Engineer</h3>
+        <div><strong>QBurst</strong> – Koratty Infopark, Kerala 680308<br><em>2023 – Present</em></div>
+        <ul>
+          <li>Backend development for a Generative AI platform using <strong>Spring Boot 3.5</strong> and <strong>Java 21</strong></li>
+          <li>Designed scalable REST APIs and asynchronous data pipelines with <strong>SQS</strong>, <strong>Lambda</strong>, and <strong>Spring Batch</strong></li>
+          <li>Developed and maintained batch processing workflows and scheduled cron jobs using <strong>Spring Batch</strong> and <strong>Quartz</strong></li>
+          <li>Built AWS-integrated file processors using <strong>S3</strong>, <strong>Lambda</strong>, <strong>SQS</strong>, and <strong>AWS SDK v2</strong></li>
+          <li>Implemented full-stack observability using <strong>OpenTelemetry</strong> for HTTP, DB</li>
+          <li>Optimized application using a custom JRE built with <strong>JLink</strong>, <strong>JDeps</strong>, and layered Docker images for efficient deployment</li>
+        </ul>
+        <h4>Key Projects for a Leading Global HR Services Company at QBurst</h4>
+        <ul>
+          <li><strong>R&D Initiative for Generative AI Matching Platform (Lead Backend Developer, 2025 – Present):</strong> Led design and prototyping of advanced backend architectures for Generative AI-driven CV and job description matching, integrated custom retrieval pipelines and observability solutions, and drove innovation and scalability in production systems.</li>
+          <li><strong>Generative AI Matching Platform (2023 – Present):</strong> Designed and implemented a modular backend solution for a global HR services company, integrated <strong>AWS Bedrock Claude</strong> with <strong>Spring AI</strong>, managed large-scale document ingestion and analytics, and implemented OpenTelemetry for observability.</li>
+          <li><strong>Recruitment Management App (Flutter):</strong> Built a cross-platform Flutter app for managing recruitment services, with secure authentication, real-time updates, and robust state management for Android and iOS.</li>
+        </ul>
+      </div>
+    </section>
     <section id="about" class="section">
       <div class="window-box">
-        <div class="toolbar">
-          <div class="red circular-button"></div>
-          <div class="yellow circular-button"></div>
-          <div class="green circular-button"></div>
+        <div class="mac-toolbar">
+          <div class="mac-toolbar-left">
+            <div class="mac-buttons">
+              <span class="mac-btn mac-btn-red" title="Close"></span>
+              <span class="mac-btn mac-btn-yellow" title="Minimize"></span>
+              <span class="mac-btn mac-btn-green" title="Expand"></span>
+            </div>
+          </div>
+          <div class="mac-title">Terminal — bash — 80x24</div>
         </div>
         <div class="terminal">
           <div class="terminal-commands">
@@ -222,11 +249,7 @@
             </div>
           </div>
           <div class="terminal-commands">
-            <div class="terminal-command">
-              <div>></div>
-              <div id="question" class="blink-command"></div>
-            </div>
-            <div id="answer" class="terminal-answer"></div>
+            <!-- Removed blinking prompt -->
           </div>
         </div>
       </div>
@@ -247,27 +270,6 @@
           <li><strong>Spring Batch + Quartz + PostgreSQL + NGINX + LocalStack:</strong> Dockerize batch job environment with advanced scheduling, PostgreSQL, S3 (LocalStack), and NGINX reverse proxy. <a href="https://github.com/alanta335/spring_batch_with_spring_quartz" target="_blank">GitHub</a></li>
           <li><strong>E-commerce Website (React, Tailwind, Firebase, Razorpay, Google Cloud Run):</strong> E-commerce platform for selling tote bags, built with React and Tailwind CSS, using Firebase for backend, Razorpay for payments, and deployed on Google Cloud Run. <a href="https://github.com/alanta335/ecomerse_website_react_firebase" target="_blank">GitHub</a></li>
           <li><strong>AI Agent Doctor (Flutter, LLM, Groq):</strong> AI-powered doctor assistant app for users without access to real doctors, built with Flutter and LLM Groq. <a href="https://github.com/alanta335/ai-agent" target="_blank">GitHub</a></li>
-        </ul>
-      </div>
-    </section>
-    <section class="section" id="experience">
-      <div class="window-box">
-        <h2>💼 Experience</h2>
-        <h3>Software Engineer</h3>
-        <div><strong>QBurst</strong> – Koratty Infopark, Kerala 680308<br><em>2023 – Present</em></div>
-        <ul>
-          <li>Backend development for a Generative AI platform using <strong>Spring Boot 3.5</strong> and <strong>Java 21</strong></li>
-          <li>Designed scalable REST APIs and asynchronous data pipelines with <strong>SQS</strong>, <strong>Lambda</strong>, and <strong>Spring Batch</strong></li>
-          <li>Developed and maintained batch processing workflows and scheduled cron jobs using <strong>Spring Batch</strong> and <strong>Quartz</strong></li>
-          <li>Built AWS-integrated file processors using <strong>S3</strong>, <strong>Lambda</strong>, <strong>SQS</strong>, and <strong>AWS SDK v2</strong></li>
-          <li>Implemented full-stack observability using <strong>OpenTelemetry</strong> for HTTP, DB</li>
-          <li>Optimized application using a custom JRE built with <strong>JLink</strong>, <strong>JDeps</strong>, and layered Docker images for efficient deployment</li>
-        </ul>
-        <h4>Key Projects for a Leading Global HR Services Company at QBurst</h4>
-        <ul>
-          <li><strong>R&D Initiative for Generative AI Matching Platform (Lead Backend Developer, 2025 – Present):</strong> Led design and prototyping of advanced backend architectures for Generative AI-driven CV and job description matching, integrated custom retrieval pipelines and observability solutions, and drove innovation and scalability in production systems.</li>
-          <li><strong>Generative AI Matching Platform (2023 – Present):</strong> Designed and implemented a modular backend solution for a global HR services company, integrated <strong>AWS Bedrock Claude</strong> with <strong>Spring AI</strong>, managed large-scale document ingestion and analytics, and implemented OpenTelemetry for observability.</li>
-          <li><strong>Recruitment Management App (Flutter):</strong> Built a cross-platform Flutter app for managing recruitment services, with secure authentication, real-time updates, and robust state management for Android and iOS.</li>
         </ul>
       </div>
     </section>
