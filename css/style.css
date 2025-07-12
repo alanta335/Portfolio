@@ -382,6 +382,30 @@ footer {
   box-shadow: 0 2px 8px 0 rgba(116, 127, 224, 0.08);
   background: #f0f4ff;
 }
+/* --- Terminal Skills List Styling --- */
+.terminal-skills-list {
+  background: #44476a;
+  border-radius: 8px;
+   padding: 1.2rem 3.5rem 1.2rem 1.5rem; /* increased right padding */
+   margin: 1rem 0 0.5rem 0;
+   box-shadow: 0 2px 8px 0 rgba(23,24,29,0.10);
+   border-left: 4px solid #e7d184;
+   margin-right: 2.5rem; /* add gap to the right */
+}
+.terminal-skills-list li {
+  color: #e7d184;
+  font-size: 1.01rem;
+  margin-bottom: 0.7rem;
+  background: none;
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  transition: none;
+}
+.terminal-skills-list li strong {
+  color: #fff;
+  font-weight: 600;
+}
 @media (max-width: 700px) {
   .window-box {
     width: 98vw;
@@ -395,5 +419,9 @@ footer {
     height: 30vh;
     max-width: 60vw;
   }
+  .terminal-skills-list {
+    padding: 0.7rem 0.7rem 0.7rem 0.5rem;
+  }
 }
+/* --- End Terminal Skills List Styling --- */
 /* --- End Portfolio Modern Additions --- */
