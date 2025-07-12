@@ -61,7 +61,6 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  min-height: 50vh;
   padding: 3rem;
 }
 
@@ -167,7 +166,7 @@ body {
   user-select: none;
   margin-left: 1.2em;
 }
-}
+
 .mac-buttons {
   display: flex;
   gap: 7px;
@@ -200,7 +199,7 @@ body {
   opacity: 0.8;
   user-select: none;
 }
-}
+
 .circular-button {
   border-radius: 100%;
 }
@@ -241,7 +240,7 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-    }
+    
     
     @keyframes terminal-glow {
       0% {
