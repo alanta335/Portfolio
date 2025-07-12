@@ -80,19 +80,24 @@ body {
 .section {
   display: flex;
   flex-direction: column;
-  gap: 3vh;
+  gap: 2.5vh;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2vh;
 }
 
 .window-box {
-  width: 80vw;
-  min-width: 90%;
-  min-height: 70vh;
-  border-radius: 10px;
-  margin-bottom: 5vh;
-  box-shadow: 0 4px 8px 0 rgba(23, 24, 29, 0.363),
-    0 6px 20px 0 rgba(5, 7, 17, 0.397);
+  width: 90vw;
+  max-width: 900px;
+  min-width: 300px;
+  min-height: 0;
+  border-radius: 18px;
+  margin-bottom: 4vh;
+  background: #fff;
+  box-shadow: 0 4px 24px 0 rgba(116, 127, 224, 0.1),
+    0 1.5px 8px 0 rgba(82, 95, 127, 0.08);
+  padding: 2.5rem 2rem;
+  border: 1.5px solid #e3e8f7;
 }
 
 .toolbar {
@@ -296,3 +301,99 @@ footer {
   text-align: center;
   min-height: 10vh;
 }
+
+/* --- Portfolio Modern Additions --- */
+.hero-contact {
+  margin: 1.2rem 0 0.7rem 0;
+  font-size: 1.08rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  color: #525f7f;
+}
+.hero-core-tech {
+  margin-bottom: 0.7rem;
+  font-size: 1.05rem;
+  color: #747fe0;
+  font-weight: 500;
+}
+.window-box {
+  width: 90vw;
+  max-width: 900px;
+  min-width: 300px;
+  min-height: 0;
+  border-radius: 18px;
+  margin-bottom: 4vh;
+  background: #fff;
+  box-shadow: 0 4px 24px 0 rgba(116, 127, 224, 0.1),
+    0 1.5px 8px 0 rgba(82, 95, 127, 0.08);
+  padding: 2.5rem 2rem;
+  border: 1.5px solid #e3e8f7;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vh;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2vh;
+}
+.window-box h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #747fe0;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.5px;
+  border-bottom: 2.5px solid #e3e8f7;
+  padding-bottom: 0.4rem;
+}
+.window-box h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #525f7f;
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.window-box h4 {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #747fe0;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+.skills-list, .projects-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.skills-list li, .projects-list li {
+  background: #f6f9fc;
+  border-left: 4px solid #747fe0;
+  padding: 0.7rem 1rem;
+  border-radius: 6px;
+  font-size: 1.01rem;
+  color: #3a405a;
+  transition: box-shadow 0.2s;
+}
+.skills-list li:hover, .projects-list li:hover {
+  box-shadow: 0 2px 8px 0 rgba(116, 127, 224, 0.08);
+  background: #f0f4ff;
+}
+@media (max-width: 700px) {
+  .window-box {
+    width: 98vw;
+    padding: 1.2rem 0.5rem;
+  }
+  .hero-container {
+    width: 98vw;
+    min-width: 0;
+  }
+  .project-image img {
+    height: 30vh;
+    max-width: 60vw;
+  }
+}
+/* --- End Portfolio Modern Additions --- */
